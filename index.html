@@ -1,283 +1,274 @@
-<!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Panos Home Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body class="landing">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panos Karagiannis – CEO of Moveo.AI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@moveo-ai/web-client@latest/dist/web-client.min.js"></script>
+    <script>MoveoAI.init({ integrationId: "a1522d3e-f6f4-46c6-83ae-aa014203c429", version: "v2"}).then((desk) => console.log("Moveo Connected")).catch((error) => console.error(error));
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo">Last updated: 06/11/2023</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Projects</a>
-								<ul>
-									<li><a href="thesis.html">End-to-End Natural Language Generation using LSTM-based Neural Networks</a></li>
-									<li><a href="compare_bayes.html">Comparing Bayesian and LSTM Networks in Natural Language Generation</a></li>
-									<li><a href="dm.html">Data Mining Projects</a></li>
-									<!--- <li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								-->
-								</ul>
-							</li>
-							<li><a href="snippets.html">Code Snippets</a></li>
-							<li><a target="_blank" href="https://moveo.ai?utm_source=panos_personal_website&utm_medium=referral&utm_campaign=website_traffic
-								" class="button special" >Moveo.AI</a>  </a></li>
-						</ul>
-					</nav>
-				</header>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="content"> 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-						<header>
-							<h2>Panos Karagiannis</h2>
-							<p>The journey of a computer scientist turned CEO,<br />
-							leading the way in conversational AI innovation.</p>
-							 <br />
-							 <!-- <section class="4u 6u$(medium) 12u$(xsmall)">
-									<p> <a href='Files/panos_resume.pdf' > Resume </a>  </p>
-							</section> -->
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
 
-						</header>
-						<span class="image"><img src="images/profile-new.png" alt="" /></span>
-					</div>
-					<a href="#zero" class="goto-next scrolly">Next</a>
-				</section>
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #000;
+        }
 
-				<!-- One -->
-				<section id="zero" class="spotlight style1 bottom">
-					<span class="image fit main" ><img  src="images/moveo-logo.png"  /></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>Moveo.AI</h2>
-										<p>CEO</p>
-									</header>
-								</div>
-								<div class="4u 12u$(medium)">
-									<p>Moveo.ai is a funded conversational AI startup with presence in New York City, Sao Paolo and Athens. Moveo allows enterprises to turn one-way notifications into revenue-driving conversations with proactive GenAI agents designed for the financial services industry. Using Moveo’s AI-powered CX platform you can deliver hyper-personalized experiences at scale, drive revenue growth, reduce churn and enhance product adoption</i> </p>
-								</div>
-								<div class="4u$ 12u$(medium)">
-									<p>We have the privilege to be working with some of the leading financial institurions worldwide.
-										Our team is unique combining technical acumen with solid business experience: We love to code and we have won US patents in AI and machine learning.
-										We are not your average startup.
-										<br> </br>
-										Interested working with talented and passionate people? 
-										<a href="mailto:careers@moveo.ai" > <span  class="icon alt minor fa-paper-plane"></span> </a>
-										&nbsp;your resume!
+        .hero .role {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 24px;
+        }
 
+        .hero .tagline {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
 
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
-				</section>
+        .hero .portrait {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 40px;
+            display: block;
+            border: 3px solid #f0f0f0;
+        }
 
-				<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main" ><img  src="images/watson.gif"  /></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>IBM Watson Assistant</h2>
-										<p>NLP Engineer</p>
-									</header>
-								</div>
-								<div class="4u 12u$(medium)">
-									<p>Part of the <i> AI Innovations and Research</i> team. Main resposnibilities included driving productization of machine learning algorithms related to natural language understanding, intent and entity classification around Watson Assistant.</p>
-								</div>
-								<div class="4u$ 12u$(medium)">
-									<p>During my first year, I developed a novel, context-sensitive, state-of-the-art spell correction algorithm, which was integrated into the Watson Assistant platform, benefiting hundreds of thousands of end users. This work also earned me a US Patent.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</section>
+        .hero .bio {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
 
-			<!-- One -->
-				<section id="two" class="spotlight style1 bottom">
-					<span class="image fit main" ><img  src="images/banner_baskin2.png"  /></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>Master of Science in Computer Science</h2>
-										<p>University of California, Santa Cruz</p>
-									</header>
-								</div>
-								<div class="4u 12u$(medium)">
-									<p>Part of the Natural Language and Dialogue Systems Lab. I completed my master thesis on natural language generation using sequence to sequence models with attention, in order to produce utterances that have the variations of the human language.</p>
-								</div>
-								<div class="4u$ 12u$(medium)">
-									<p>I graduated Fall 2017.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
+        section:last-child {
+            border-bottom: none;
+        }
 
-				<!-- Panos one -->
-				<section id="three" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/banner_ucla2.jpg" alt="" style="opacity:0.8 ;"/></span>
-					<div class="content">
-						<div class="container">
-							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>Bachelor of Science in Mathematics of Computation</h2>
-										<p>University of California, Los Angeles</p>
-									</header>
-								</div>
-								<div class="4u 12u$(medium)">
-									<p>I completed my Bachelor's Degree in Mathematics of Computation at UCLA from 2012-2016.</p>
-								</div>
-								<div class="4u$ 12u$(medium)">
-									<p>Member of the Undergraduate Student Math Association since 2014.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
-				</section>
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #000;
+        }
 
-			<!-- Two -->
-				<section id="four" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/optimized_encoder_decoder.jpg" alt="" style="opacity:0.8 ;" /></span>
-					<div class="content">
-						<header>
-							<h2>Deep Learning Research for Natural Language Processing</h2>
-							<p>Natural Language and Dialogue Systems Lab</p>
-						</header>
-						<p>Part of the research team, under Professor Marilyn Walker, that explores  sequence to sequence neural models in natural language generation.
-						Frameworks: TensorFlow, Pandas, Scikit-learn, NumPy
-						</p>
-						<ul class="actions">
-							<li><a href="thesis.html" class="button">Learn More</a></li>
-						</ul>
-					</div>
-					<a href="#five" class="goto-next scrolly">Next</a>
-				</section>
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #000;
+        }
 
-			<!-- Three -->
-				<section id="six" class="wrapper style1 special fade-up">
-					<div class="container">
-						<header class="major">
-							<h2>Contact Information</h2>
-							<p>Contact me if you are interested in working with me</p>
-						</header>
-						<div class="box alt">
-							<div class="row uniform">
-								
-								<section class="4u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major  fa-university"></span>
-									<h3>Office</h3>
-									<p>I am based in New York, USA and Athens, Greece</p>
-								</section>
+        p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1.1rem;
+        }
 
-								<section class="4u 6u$(medium) 12u$(xsmall)">
-									<span  class="icon alt major fa-twitter"></span>
-									<h3>X</h3>
-									<p>Add me on <a target="_blank" href="https://x.com/panoskaragia" > Twitter </a></p>
-								</section> 
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
 
-								<section class="4u 6u(medium) 12u$(xsmall)">
-									<span class="icon alt major fa fa-linkedin"></span>
-									<h3>LinkedIn</h3>
-									<p>Message me on <a target="_blank" href="https://www.linkedin.com/in/panos-karagiannis-047987138/" > LinkedIn </a></p>
-								</section>
+        li {
+            margin-bottom: 12px;
+            color: #555;
+            font-size: 1.1rem;
+        }
 
-							</div>
-						</div>
-						<!-- <footer class="major">
-							<ul class="actions">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
-							</ul>
-						</footer>
-					-->
-					</div>
-				</section>
+        /* Links */
+        a {
+            color: #007AFF;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
 
-			<!-- Five -->
-			<!--
-				 <section id="five" class="wrapper style2 special fade">
-					<div class="container">
-						<header>
-							<h2>See my work</h2>
-							<p>Most of my projects are on my Github and Bitbucket</p>
-						</header>
+        a:hover {
+            border-bottom: 1px solid #007AFF;
+        }
 
-						<div>
-						<section class="4u 6u(medium) 12u$(xsmall)">		
-							<a target="_blank" href="https://bitbucket.org/dashboard/repositories"><span class="icon alt major fa fa-bitbucket"></span></a>
-						</section>
-						</div>
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
 
-						<section class="4u 6u(medium) 12u$(xsmall)">		
-							<a target="_blank" href="https://github.com/apropos13"><span class="icon alt major fa fa-github"></span></a>
-						</section>
+        .contact-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: #fafafa;
+            border-radius: 8px;
+        }
 
+        .contact-item h3 {
+            margin-bottom: 12px;
+        }
 
-						<form method="post" action="#" class="container 50%">
-							<div class="row uniform 50%">
-								<div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
-							</div>
-						</form>
-					</div>
-				</section>
+        /* Highlights */
+        .highlights {
+            background: #fafafa;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
 
-			-->
+        .highlights ul {
+            margin: 0;
+        }
+
+        .highlights li {
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .role {
+                font-size: 1.1rem;
+            }
+
+            .hero .portrait {
+                width: 150px;
+                height: 150px;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .highlights {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/profile-new.png" alt="Panos Karagiannis" class="portrait">
+            <h1>Panos Karagiannis</h1>
+            <div class="role">CEO of Moveo.AI</div>
+            <div class="tagline">Building Agents that power the toughest conversations.</div>
+            <p class="bio">Co-Founder & CEO at Moveo.AI. Passionate about building great products. Leading a funded conversational AI startup with presence in New York City, São Paulo, and Athens.</p>
+        </section>
+
+        <!-- About Section -->
+        <section>
+            <h2>About</h2>
+            <p>
+				My journey with AI began at <strong>UCLA</strong>, where I studied mathematics & computer science and discovered my calling in AI as the perfect intersection of software skills, algorithms, calculus, linear algebra and statistics.
+				This path deepened during my graduate studies at <strong>UC Santa Cruz</strong>.
+			  </p>
 			
+			  <p>
+				At <strong>IBM Watson</strong>, I worked at the intersection of NLP and engineering, helping to productize complex neural architectures and earning a couple of U.S. patents along the way.
+				My time on the Watson Assistant team taught me that great AI isn't enough: <strong>scalable, well-engineered systems</strong> are sometimes 85% of the work required to turn cutting-edge research into real-world products.
+			  </p>
+			
+			  <p>
+				A few years ago, I co-founded <strong>Moveo.AI</strong>. Since then, we've grown from 4 founders to a global team of 40+ across 3 continents.
+				We've raised millions in venture funding and built state of the art Agents as a Service platform that serves millions of users in 20+ countries.
+				Today, we support enterprise clients across <strong>BFSI, telecom, and government</strong>. And we're just getting started!
+			  </p>
+			
+			  <p>
+				As a founder, I'm driven by teams that build boldly, execute precisely, and take pride in their work.
+				For me, success is measured in real-world outcomes: <strong>customer impact, retention, and revenue</strong> (in that order).
+			  </p>
+        </section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<!-- <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-						<!-- <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li> -->
-						<!-- <li><a target="_blank" href="https://www.linkedin.com/in/panos-karagiannis-047987138/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
-						<!-- <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-						<!-- <li><a target="_blank" href="https://github.com/apropos13" class="icon alt fa-github"><span class="label">GitHub</span></a></li> -->
-						<!--- <li><a href="#" class="icon alt fa-envelope"><span class="label">panoskaragiannis.ucla@gmail</span></a></li> -->
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Panos Karagiannis. All rights reserved.</li>
-					</ul>
-				</footer>
+        <!-- Some things I believe -->
+        <section>
+            <h2>Some things I believe</h2>
+            <ol>
+                <li>Best tech does not always win</li>
+                <li>Skill and passion matter, but the true determinant of success is simple: don't quit (even when the abyss is staring back at you).</li>
+                <li>The companies that win are the ones that iterate the fastest</li>
+                <li>Great companies are built on great people</li>
+                <li>Dogs at work are not culture</li>
+                <li>Transformers aren't the path to AGI, but should be treated as a useful tool. Would you rather build a house with a bulldozer or with your bare hands?</li>
+            </ol>
+        </section>
 
-		</div>
+        <!-- Selected Work -->
+        <section>
+            <h2>Selected Work & Press</h2>
+            <ul>
+                <li>🎤 <strong>Speaking Engagements</strong>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>• Google Cloud Day, Athens (Nov 2024) - Keynote panelist on Generative AI in enterprise CX, with Thomas Cliett (Google Cloud). <a href="https://www.linkedin.com/posts/panos-karagiannis-047987138_great-to-present-our-work-on-ai-agents-at-activity-7266857949334024192-PA9-?utm_source=share&utm_medium=member_desktop&rcm=ACoAACGao3cBc7Fcar4pedbzrpVh51UKGXf6L3U" target="_blank">LinkedIn Post</a></li>
+                        <li>• Mastercard Fintech Forum, Berlin (Oct 2024) - Proactive AI agents in digital banking. <a href="https://www.linkedin.com/posts/panos-karagiannis-047987138_just-wrapped-up-an-incredible-experience-activity-7254429277608177665-1ce1/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACGao3cBc7Fcar4pedbzrpVh51UKGXf6L3U" target="_blank">LinkedIn Post</a></li>
+                    </ul>
+                </li>
+                <li>🎙️ <strong>Podcasts</strong>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>• <a href="https://www.youtube.com/watch?v=kkMrtm_ak7I" target="_blank">Is AI enough? How businesses can stand out</a></li>
+                    </ul>
+                </li>
+                <li>📚 <strong>Academic Work</strong>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>• <a href="https://arxiv.org/abs/1805.06553">A Deep Ensemble Model with Slot Alignment for Sequence-to-Sequence Natural Language Generation
+ 						</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
